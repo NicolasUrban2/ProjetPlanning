@@ -37,4 +37,8 @@ public class MainController {
         root.setResizable(false);
         root.show();
     }
+
+    public void changeView(String scene) {
+        this.mainLayoutController.changeView(scene);
+    }
 }

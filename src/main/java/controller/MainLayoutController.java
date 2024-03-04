@@ -20,7 +20,7 @@ public class MainLayoutController implements Initializable {
     private MainController mainController = MainController.getInstance();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        changeView("loginScreenLayout");
+        changeView("loginPage");
     }
 
     public void changeView(String viewName) {
