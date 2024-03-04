@@ -1,4 +1,4 @@
-module com.planning.projetplanning {
+module main {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -7,6 +7,8 @@ module com.planning.projetplanning {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.planning.projetplanning to javafx.fxml;
-    exports com.planning.projetplanning;
+    exports main;
+    opens main to javafx.fxml;
+    exports controller;
+    opens controller to javafx.fxml;
 }
