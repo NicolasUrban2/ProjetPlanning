@@ -34,7 +34,6 @@ public class MainController {
         Scene scene = new Scene(rootAnchorPane);
         root.setTitle("EDT Turboflex");
         root.setScene(scene);
-        root.setResizable(false);
         root.show();
     }
 
