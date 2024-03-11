@@ -25,7 +25,7 @@ public class UserRetrieverJSON implements UserRetriever{
 
     @Override
     public User retrieveFromIdentifierAndPassword(String identifier, String password) {
-        String json = this.readJsonFile();
+        String json = JsonReader.readJsonFile(this.pathToJSONUsers);
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             List<User> users = objectMapper.readValue(json, new TypeReference<List<User>>() {});
@@ -44,26 +44,5 @@ public class UserRetrieverJSON implements UserRetriever{
             System.err.println(e.getMessage());
         }
         return null;
-    }
-
-    private String readJsonFile() {
-        try (FileReader fileReader = new FileReader(this.pathToJSONUsers);
-             BufferedReader bufferedReader = new BufferedReader(fileReader)) {
-
-            StringBuilder stringBuilder = new StringBuilder();
-            String line;
-
-            while ((line = bufferedReader.readLine()) != null) {
-                stringBuilder.append(line);
-                stringBuilder.append("\n"); // Append newline character
-            }
-
-            String fileContent = stringBuilder.toString();
-            return fileContent;
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return "";
     }
 }

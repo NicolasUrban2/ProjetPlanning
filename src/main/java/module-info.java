@@ -10,6 +10,8 @@ module main {
     requires com.fasterxml.jackson.core;
     requires com.fasterxml.jackson.databind;
 
+    requires org.mnode.ical4j.core;
+
     exports main;
     opens main to javafx.fxml;
     exports controller;
