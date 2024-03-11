@@ -1,11 +1,290 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
    <children>
-      <Label layoutX="286.0" layoutY="192.0" text="Home" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <BorderPane prefHeight="955.0" prefWidth="1910.0" BorderPane.alignment="CENTER">
+               <center>
+                  <GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Lundi" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="35.0" />
+                           </font></Label>
+                        <Label text="Mardi" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                           <font>
+                              <Font size="35.0" />
+                           </font></Label>
+                        <Label text="Mercredi" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                           <font>
+                              <Font size="35.0" />
+                           </font></Label>
+                        <Label text="Jeudi" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                           <font>
+                              <Font size="35.0" />
+                           </font></Label>
+                        <Label text="Vendredi" GridPane.columnIndex="4" GridPane.halignment="CENTER">
+                           <font>
+                              <Font size="35.0" />
+                           </font></Label>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="20.0" left="5.0" right="5.0" top="15.0" />
+                     </BorderPane.margin>
+                  </GridPane>
+               </center>
+               <BorderPane.margin>
+                  <Insets right="10.0" />
+               </BorderPane.margin>
+                <left>
+                    <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="104.0" BorderPane.alignment="CENTER">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                            <Label text="08:00" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                            <Label text="09:00" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                            <Label text="10:00" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                            <Label text="11:00" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                            <Label text="12:00" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                            <Label text="13:00" GridPane.halignment="CENTER" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                            <Label text="14:00" GridPane.halignment="CENTER" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                            <Label text="15:00" GridPane.halignment="CENTER" GridPane.rowIndex="14">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                            <Label text="16:00" GridPane.halignment="CENTER" GridPane.rowIndex="16">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                            <Label text="17:00" GridPane.halignment="CENTER" GridPane.rowIndex="18">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                            <Label text="18:00" GridPane.halignment="CENTER" GridPane.rowIndex="20">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                            <Label text="19:00" GridPane.halignment="CENTER" GridPane.rowIndex="22">
+                           <font>
+                              <Font size="31.0" />
+                           </font></Label>
+                        </children>
+                        <BorderPane.margin>
+                            <Insets bottom="14.0" left="5.0" right="5.0" top="35.0" />
+                        </BorderPane.margin>
+                    </GridPane>
+                </left>
+            </BorderPane>
+         </center>
+         <top>
+            <BorderPane prefHeight="146.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+               <center>
+                  <TextField alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="921.0" promptText="Rechercher (salle, cours ou personnel)" BorderPane.alignment="BOTTOM_CENTER">
+                     <BorderPane.margin>
+                        <Insets left="500.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </TextField>
+               </center>
+               <right>
+                  <GridPane prefHeight="126.0" prefWidth="430.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.732177734375" minWidth="10.0" prefWidth="123.87548828125" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.1600341796875" minWidth="10.0" prefWidth="177.7142333984375" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.017333984375" minWidth="10.0" prefWidth="134.7857666015625" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="105.0" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <graphic>
+                              <Icon content="HELP_OUTLINE" />
+                           </graphic>
+                        </Button>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="128.0" text="Aujourd'hui" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Button>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="105.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                           <graphic>
+                              <Icon content="HELP_OUTLINE" />
+                           </graphic>
+                        </Button>
+                        <SplitMenuButton mnemonicParsing="false" text="Semaine" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </SplitMenuButton>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="20.0" />
+                     </BorderPane.margin>
+                  </GridPane>
+               </right>
+            </BorderPane>
+         </top>
+         <left>
+            <GridPane alignment="CENTER" prefHeight="528.0" prefWidth="215.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="171.73226928710938" minHeight="0.0" prefHeight="52.92839050292969" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="580.0" minHeight="10.0" prefHeight="92.07160949707031" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="621.2104187011719" minHeight="0.0" prefHeight="95.96450805664062" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="651.0136413574219" minHeight="10.0" prefHeight="101.91098022460938" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="657.3885192871094" minHeight="10.0" prefHeight="103.3399658203125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="657.3885192871094" minHeight="10.0" prefHeight="497.6600341796875" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Filtrer par" textAlignment="CENTER" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <SplitMenuButton mnemonicParsing="false" text="Matière" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </SplitMenuButton>
+                  <SplitMenuButton mnemonicParsing="false" text="Groupe" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                     </items>
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </SplitMenuButton>
+                  <SplitMenuButton mnemonicParsing="false" text="Salle" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </SplitMenuButton>
+                  <SplitMenuButton mnemonicParsing="false" text="Type" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="CM" />
+                        <MenuItem mnemonicParsing="false" text="TP" />
+                        <MenuItem mnemonicParsing="false" text="TD" />
+                     </items>
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </SplitMenuButton>
+               </children>
+            </GridPane>
+         </left>
+      </BorderPane>
    </children>
 </AnchorPane>
