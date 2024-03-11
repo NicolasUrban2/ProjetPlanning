@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Jean Claude",
+    "identifier": "jean",
+    "password": "123456",
+    "type": "TEACHER"
+  },
+  {
+    "name": "Jean Gui",
+    "identifier": "jeang",
+    "password": "123",
+    "type": "STUDENT"
+  }
+]
