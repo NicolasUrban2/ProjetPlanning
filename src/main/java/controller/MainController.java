@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import main.Main;
 
 import java.io.IOException;
@@ -34,6 +35,7 @@ public class MainController {
         Scene scene = new Scene(rootAnchorPane);
         root.setTitle("EDT Turboflex");
         root.setScene(scene);
+        root.setMaximized(false); // TODO : set to true
         root.show();
     }
 

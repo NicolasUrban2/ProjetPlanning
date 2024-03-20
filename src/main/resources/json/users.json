@@ -6,9 +6,9 @@
     "type": "TEACHER"
   },
   {
-    "name": "Jean Gui",
-    "identifier": "jeang",
-    "password": "123",
+    "name": "Test",
+    "identifier": "",
+    "password": "",
     "type": "STUDENT"
   }
 ]
