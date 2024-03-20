@@ -68,6 +68,7 @@ public class HomePageController implements Initializable {
             ViewAndController viewAndController = ViewLoader.getViewAndController("eventComponent");
             EventComponentController eventComponentController = (EventComponentController) viewAndController.controller;
             eventComponentController.setType(event.getCategory());
+            System.out.println(event.getDescription());
             eventComponentController.setSubject(event.getSummary());
             eventComponentController.setRoom(event.getLocation());
 
