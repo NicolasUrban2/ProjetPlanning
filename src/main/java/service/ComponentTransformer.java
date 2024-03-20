@@ -1,5 +1,6 @@
 package service;
 
+import entity.CourseEvent;
 import entity.Event;
 import model.EventProperties;
 import net.fortuna.ical4j.model.Component;
@@ -51,6 +52,15 @@ public class ComponentTransformer {
         String location = component.getProperty(EventProperties.LOCATION.name()).getValue();
         String description = component.getProperty(EventProperties.DESCRIPTION.name()).getValue();
 
-        return new Event(categories, dtstamp, lastModified, uid, dtstart, dtend, summary, location, description);
+        try {
+            CourseEvent courseEvent = new CourseEvent(categories, dtstamp, lastModified, uid, dtstart, dtend, summary, location, description);
+            System.out.println(courseEvent.toString());
+            return courseEvent;
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+            Event event = new Event(categories, dtstamp, lastModified, uid, dtstart, dtend, summary, location, description);
+            System.out.println(event.toString());
+            return event;
+        }
     }
 }

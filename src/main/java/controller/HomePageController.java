@@ -1,6 +1,7 @@
 package controller;
 
 import entity.Config;
+import entity.CourseEvent;
 import entity.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -67,8 +68,8 @@ public class HomePageController implements Initializable {
 
             ViewAndController viewAndController = ViewLoader.getViewAndController("eventComponent");
             EventComponentController eventComponentController = (EventComponentController) viewAndController.controller;
-            eventComponentController.setType(event.getCategory());
-            eventComponentController.setSubject(event.getSummary());
+            eventComponentController.setType(((CourseEvent) event).getCourseType().toString());
+            eventComponentController.setSubject(((CourseEvent) event).getName());
             eventComponentController.setRoom(event.getLocation());
 
             int yStartCoordinates = (startHour - 8)*2+1+(event.getStart().getMinutes()/30);
